@@ -5,7 +5,7 @@ import fsPromises from 'fs/promises';
 const newsPostsPath = path.resolve(__dirname, '../data/newsPosts.json');
 
 
-const ensureDataFileExists = async (): Promise<NewPost[]> => {
+export const ensureDataFileExists = async (): Promise<NewPost[]> => {
     const dataDir = path.dirname(newsPostsPath);
     
     try {
@@ -24,4 +24,6 @@ const ensureDataFileExists = async (): Promise<NewPost[]> => {
     }
 };
 
-export default ensureDataFileExists;
+export const saveData = async (posts: NewPost[]): Promise<void> => {
+    await fsPromises.writeFile(newsPostsPath, JSON.stringify(posts, null, 2));
+}

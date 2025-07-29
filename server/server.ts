@@ -20,7 +20,7 @@ app.use(cors({
     credentials: true
 }));
 
-app.use('/api/news', newsPosts);
+app.use('/api/newsposts', newsPosts);
 app.use('/', staticGet);
 
 app.listen(PORT, () => {

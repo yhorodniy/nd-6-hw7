@@ -5,7 +5,7 @@ import {
     createPost, 
     updatePost, 
     deletePost 
-} from '../controller/postController';
+} from '../controller/newspostsController';
 
 const router = express.Router();
 

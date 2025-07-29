@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "dev:server": "ts-node server.ts",
+    "dev:server": "nodemon --exec ts-node server.ts",
+    "dev": "ts-node server.ts",
     "build": "tsc",
     "start:prod": "node dist/server.js"
   },
@@ -24,6 +25,7 @@
     "@types/express": "^5.0.3",
     "@types/node": "^24.0.13",
     "@types/uuid": "^10.0.0",
+    "nodemon": "^3.1.10",
     "ts-node": "^10.9.2",
     "typescript": "^5.8.3"
   },

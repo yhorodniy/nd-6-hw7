@@ -19,6 +19,13 @@
     font-size: 2rem;
 }
 
+.posts-info {
+    margin-bottom: 20px;
+    text-align: center;
+    color: #666;
+    font-size: 0.9rem;
+}
+
 .posts-grid {
     display: grid;
     gap: 20px;
